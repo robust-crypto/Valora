@@ -1,19 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/login_background"
+    tools:context=".MainActivity"
+    android:padding="16dp">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:gravity="center"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:layout_width="221dp"
+            android:layout_height="200dp"
+            android:src="@drawable/valora" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:hint="Email"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_corner"
+             android:padding="12dp"
+            android:inputType="textEmailAddress"
+            android:id="@+id/email_input"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Password"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="12dp"
+            android:inputType="textPassword"
+            android:id="@+id/password_input"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:backgroundTint="@color/orange"
+            android:textColor="@color/white"
+            android:layout_marginTop="32dp"
+            android:textSize="20sp"
+            android:id="@+id/login_btn"
+            android:padding="13dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New to Valora? Sign Up Here"
+            android:padding="18dp"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/orange"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/signup_link"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
