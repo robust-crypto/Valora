@@ -86,12 +86,12 @@
                 android:background="@drawable/rounded_corner"
                 android:padding="12dp"
                 android:inputType="textPassword"
-                android:id="@+id/confirmpassword_input"/>
+                android:id="@+id/confirmPassword_input"/>
 
             <Spinner
                 android:id="@+id/mySpinner"
                 android:layout_width="103dp"
-                android:layout_height="38dp"
+                android:layout_height="48dp"
                 android:layout_gravity="left"
                 android:layout_marginTop="12dp"
                 android:background="@drawable/rounded_corner"
@@ -118,7 +118,8 @@
                 android:textColor="@color/orange"
                 android:clickable="true"
                 android:focusable="true"
-                android:id="@+id/signup_link"/>
+                android:id="@+id/login_link"
+                />
 
         </LinearLayout>
 
