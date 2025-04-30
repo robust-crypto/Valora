@@ -34,7 +34,8 @@ class MainActivity : AppCompatActivity() {
            val password = passwordInput.text.toString()
 
            Toast.makeText(this, "User with email: $email & password:$password has logged in.", Toast.LENGTH_SHORT).show()
-
+           val intent = Intent(this,Home::class.java)
+           startActivity(intent)
 
        }
         signUpLink.setOnClickListener {

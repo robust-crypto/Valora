@@ -45,7 +45,8 @@ class Registration : AppCompatActivity() {
             val confirmPassword = confirmPasswordInput.text.toString()
 
             Toast.makeText(this, "User with email: $email, $firstName, $surname & password:$password has registered.", Toast.LENGTH_SHORT).show()
-
+            val intent = Intent(this,Home::class.java)
+            startActivity(intent)
         }
 
         loginLink.setOnClickListener {
