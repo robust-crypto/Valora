@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:id="@+id/home"
+        android:icon="@drawable/home_24dp_e3e3e3_fill0_wght400_grad0_opsz24"/>
+    <item android:title="Transactions"
+        android:id="transactions"
+        android:icon="@drawable/payments_24dp_e3e3e3_fill0_wght400_grad0_opsz24"/>
+    <item android:title="Budgets"
+        android:id="budgets"
+        android:icon="@drawable/monitoring_24dp_e3e3e3_fill0_wght400_grad0_opsz24"/>
+    <item android:title="Settings"
+        android:id="settings"
+        android:icon="@drawable/settings_24dp_e3e3e3_fill0_wght400_grad0_opsz24"/>
+</menu>
