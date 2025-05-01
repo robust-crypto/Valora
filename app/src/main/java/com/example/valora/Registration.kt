@@ -9,8 +9,6 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class Registration : AppCompatActivity() {
 
@@ -45,7 +43,7 @@ class Registration : AppCompatActivity() {
             val confirmPassword = confirmPasswordInput.text.toString()
 
             Toast.makeText(this, "User with email: $email, $firstName, $surname & password:$password has registered.", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this,Home::class.java)
+            val intent = Intent(this,HomeActivity::class.java)
             startActivity(intent)
         }
 

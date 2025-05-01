@@ -8,8 +8,6 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
 
@@ -34,7 +32,7 @@ class MainActivity : AppCompatActivity() {
            val password = passwordInput.text.toString()
 
            Toast.makeText(this, "User with email: $email & password:$password has logged in.", Toast.LENGTH_SHORT).show()
-           val intent = Intent(this,Home::class.java)
+           val intent = Intent(this,HomeActivity::class.java)
            startActivity(intent)
 
        }
