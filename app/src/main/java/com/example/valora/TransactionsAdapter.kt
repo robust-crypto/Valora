@@ -1,11 +1,13 @@
 package com.example.valora
 
 import android.net.Uri
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
 class TransactionsAdapter(
@@ -31,11 +33,18 @@ class TransactionsAdapter(
             }
 
             itemView.setOnClickListener {
+                // Log click event to see if it's firing
+                Log.d("TransactionAdapter", "Item clicked: ${transaction.title}")
+                Toast.makeText(
+                    itemView.context,
+                    "Clicked: ${transaction.title}",
+                    Toast.LENGTH_SHORT
+                ).show()
                 onItemClick(transaction)
+
             }
         }
     }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.transactions_card_item, parent, false)
         return ViewHolder(view)

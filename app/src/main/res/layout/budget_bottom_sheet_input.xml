@@ -24,7 +24,7 @@
 
         <!-- Date Picker Trigger -->
         <TextView
-            android:id="@+id/textViewDate"
+            android:id="@+id/textViewBudgetDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Select Date"
@@ -35,7 +35,7 @@
 
         <!-- Start Time Picker Trigger -->
         <TextView
-            android:id="@+id/textViewStartTime"
+            android:id="@+id/textViewBudgetStartTime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Select Start Time"
@@ -46,7 +46,7 @@
 
         <!-- End Time Picker Trigger -->
         <TextView
-            android:id="@+id/textViewEndTime"
+            android:id="@+id/textViewBudgetEndTime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Select End Time"
@@ -55,23 +55,29 @@
             android:background="@drawable/rounded_corner"
             android:layout_marginTop="16dp"/>
 
-        <!-- Image Upload Placeholder -->
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/login_background"
-            android:src="@drawable/image_24dp_e3e3e3_fill0_wght400_grad0_opsz24"/>
-
-        <Button
-            android:id="@+id/buttonUploadImage"
+        <!-- Minimum Amount -->
+        <EditText
+            android:id="@+id/editTextMinAmount"
+            android:hint="Enter Minimum Amount"
+            android:inputType="numberDecimal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Upload Image"
-            android:backgroundTint="@color/orange"
-            android:layout_marginTop="8dp"/>
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_corner"/>
+
+        <!-- Maximum Amount -->
+        <EditText
+            android:id="@+id/editTextMaxAmount"
+            android:hint="Enter Maximum Amount"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_corner"/>
 
         <!-- Amount -->
         <EditText

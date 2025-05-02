@@ -13,6 +13,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.valora.databinding.FragmentTransactionsBinding
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.example.valora.AddTransactionsActivity
+
 
 class fragment_transactions : Fragment() {
 
@@ -39,7 +41,10 @@ class fragment_transactions : Fragment() {
         }
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
         _binding = FragmentTransactionsBinding.inflate(inflater, container, false)
 
         // Initialize the transaction list and adapter

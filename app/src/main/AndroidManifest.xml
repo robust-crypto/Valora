@@ -8,9 +8,12 @@
         android:required="false" />
 
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="28" />
+        android:maxSdkVersion="29" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" android:maxSdkVersion="31"/>
+
 
     <application
         android:allowBackup="true"
@@ -23,11 +26,14 @@
         android:theme="@style/Theme.Valora"
         tools:targetApi="31">
 
-        <activity android:name=".AddTransactionsActivity"
-            android:exported="false"/>
+        <!-- Activities without intent filters should be exported="false" -->
+        <activity android:name="com.example.budgetapp.AddBudgetActivity" />
 
         <activity
-            android:name=".TransactionDetailActivity"
+            android:name="com.example.valora.AddTransactionsActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.example.valora.TransactionDetailActivity"
             android:exported="false" />
         <activity
             android:name="com.example.valora.HomeActivity"
@@ -36,6 +42,8 @@
         <activity
             android:name="com.example.valora.Registration"
             android:exported="false" />
+
+        <!-- MainActivity is the launcher, so it needs to be exported -->
         <activity
             android:name="com.example.valora.MainActivity"
             android:exported="true">
