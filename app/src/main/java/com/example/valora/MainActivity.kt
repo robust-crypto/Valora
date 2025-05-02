@@ -43,8 +43,7 @@ class MainActivity : AppCompatActivity() {
             val email = emailInput.text.toString()
             val password = passwordInput.text.toString()
 
-            Toast.makeText(this, "User with email: $email & password: $password has logged in.", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, HomeActivity::class.java)
+             val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
 

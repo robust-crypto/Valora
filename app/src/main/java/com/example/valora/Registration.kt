@@ -42,8 +42,7 @@ class Registration : AppCompatActivity() {
             val password = passwordInput.text.toString()
             val confirmPassword = confirmPasswordInput.text.toString()
 
-            Toast.makeText(this, "User with email: $email, $firstName, $surname & password:$password has registered.", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this,HomeActivity::class.java)
+                val intent = Intent(this,HomeActivity::class.java)
             startActivity(intent)
         }
 
